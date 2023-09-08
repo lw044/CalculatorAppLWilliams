@@ -7,7 +7,7 @@
     tools:context=".MainActivity">
 
     <EditText
-        android:id="@+id/firstNumberTextView"
+        android:id="@+id/firstNumberEditView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/all_margins"
@@ -102,7 +102,7 @@
         app:layout_constraintVertical_bias="0.357" />
 
     <EditText
-        android:id="@+id/secondNumberTextView"
+        android:id="@+id/secondNumberEditView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/all_margins"
@@ -123,6 +123,7 @@
         android:padding="@dimen/all_padding"
         android:text="@string/equals"
         android:textSize="@dimen/font_size"
+        android:onClick="solveEquation"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -135,7 +136,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/all_margins"
         android:padding="@dimen/all_padding"
-        android:text="TextView"
+        android:text=""
         android:textSize="@dimen/font_size"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

@@ -7,4 +7,5 @@
     <string name="multiply">x</string>
     <string name="divide">/</string>
     <string name="equals">=</string>
+    <string name="no_operation_chosen_message">Please choose an operation.</string>
 </resources>
