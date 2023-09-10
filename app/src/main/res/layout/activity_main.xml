@@ -8,8 +8,8 @@
 
     <EditText
         android:id="@+id/firstNumberEditView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="297dp"
+        android:layout_height="60dp"
         android:layout_margin="@dimen/all_margins"
         android:hint="@string/first_num"
         android:inputType="number"
@@ -103,8 +103,8 @@
 
     <EditText
         android:id="@+id/secondNumberEditView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="297dp"
+        android:layout_height="61dp"
         android:layout_margin="@dimen/all_margins"
         android:hint="@string/second_num"
         android:inputType="number"
