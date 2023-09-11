@@ -12,7 +12,7 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    String answerHistory = "";
+    String answerHistory = "Answer History:\n\n";
 
 
     @Override
@@ -25,9 +25,9 @@ public class MainActivity extends AppCompatActivity {
 
     public void displayOperation(View view){
         //https://stackoverflow.com/questions/16611198/how-to-know-which-button-called-a-method
-        // Code from StackOverflow that shows which button called this method when many buttons share
-        // this method; the button is considered the view in the parameter and can be accessed by
-        // accessing the view
+        // Code from StackOverflow that shows which button called this method when many buttons
+        // share this method; the button is considered the view in the parameter and can be
+        // accessed by accessing the view
         int button = view.getId();
         Button b = findViewById(button);
         String operation = b.getText().toString();

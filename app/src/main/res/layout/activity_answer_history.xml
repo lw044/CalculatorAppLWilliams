@@ -4,6 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/md_theme_light_background"
+    android:backgroundTint="@color/md_theme_light_inverseOnSurface"
     tools:context=".AnswerHistoryActivity">
 
     <TextView
@@ -11,29 +13,34 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/all_margins"
+        android:fontFamily="@font/capriola"
         android:padding="@dimen/all_padding"
         android:text=""
         android:textAlignment="center"
+        android:textColor="@color/md_theme_light_onBackground"
+        android:textColorHighlight="@color/md_theme_light_secondary"
         android:textSize="@dimen/font_size"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.439" />
+        app:layout_constraintVertical_bias="0.442" />
 
     <Button
         android:id="@+id/returnButton"
         android:layout_width="110dp"
         android:layout_height="wrap_content"
-        android:padding="@dimen/all_padding"
         android:layout_margin="@dimen/all_margins"
-        android:textSize="@dimen/font_size"
-        android:text="@string/return_button"
+        android:fontFamily="@font/capriola"
         android:onClick="returnScreen"
+        android:padding="@dimen/all_padding"
+        android:text="@string/return_button"
+        android:textSize="@dimen/font_size"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.906" />
+        app:layout_constraintVertical_bias="0.903" />
 </androidx.constraintlayout.widget.ConstraintLayout>
