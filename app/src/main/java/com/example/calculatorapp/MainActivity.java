@@ -2,7 +2,9 @@ package com.example.calculatorapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -11,6 +13,7 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
 
     String answerHistory = "";
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -72,5 +75,14 @@ public class MainActivity extends AppCompatActivity {
                 answerHistory += answer + "\n";
             }
         }
+    }
+
+    public void switchScreens(View v){
+        Log.i("mango", answerHistory);
+
+        Intent intent = new Intent(this, AnswerHistoryActivity.class);
+        intent.putExtra("ANSWER-HISTORY", answerHistory);
+
+        startActivity(intent);
     }
 }
