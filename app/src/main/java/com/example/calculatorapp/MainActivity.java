@@ -12,17 +12,21 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    String answerHistory = "Answer History:\n\n";
+    String answerHistory = "Answer History:\n\n";   // A string that is used to hold answers
+                                                    // that are calculated
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        // hi
     }
 
-
+    /*
+      Parameter: A view, used to identify the view that called this method
+      This method finds the id of the view that called this method, then displays the operation
+      that corresponds to the button that called this method in the mainActivityTextView.
+     */
     public void displayOperation(View view){
         //https://stackoverflow.com/questions/16611198/how-to-know-which-button-called-a-method
         // Code from StackOverflow that shows which button called this method when many buttons
@@ -35,6 +39,15 @@ public class MainActivity extends AppCompatActivity {
         t.setText(operation);
     }
 
+    /*
+      Parameter: A view, representing the view that called this method
+      Gets the text from the two editTexts that take numerical input to be calculated, if both
+      editTexts have a value. Then, the value of the mathOperationTextView is retrieved to find
+      which operation will be used. If the operation textView is empty, then a special message is
+      displayed requesting that the user selects an operation. If not, then the math problem is
+      calculated, and the solutionTextView is set to be the calculated answer. The answer is also
+      concatenated to the global variable AnswerHistory.
+     */
     public void solveEquation(View v) {
         //https://www.freecodecamp.org/news/java-string-to-int-how-to-convert-a-string-to-an-
         // integer/
@@ -77,6 +90,10 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    /*
+      This method switches screens to the activity that displays answerHistory. The global variable
+      answerHistory is put in the intent, and the intent is sent.
+     */
     public void switchScreens(View v){
         Log.i("mango", answerHistory);
 

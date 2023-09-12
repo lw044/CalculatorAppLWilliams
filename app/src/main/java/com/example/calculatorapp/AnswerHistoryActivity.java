@@ -24,6 +24,9 @@ public class AnswerHistoryActivity extends AppCompatActivity {
         ansHist.setText(answerHistoryToDisplay);
     }
 
+    /*
+      This method returns the screen back to the mainActivity, without sending anything extra.
+     */
     public void returnScreen(View v){
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
